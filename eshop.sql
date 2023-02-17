@@ -59,5 +59,7 @@ booking_id int primary key identity(1,1),
 cart_id int not null,
 booking_price int,
 booking_status varchar(17) not null,
+booking_delivery varchar(50) not null,
+booking_address varchar(100) not null,
 foreign key (cart_id) references Cart(cart_id)
 )
